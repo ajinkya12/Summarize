@@ -16,10 +16,9 @@ def SlackGet():
 	return a
 
 @app.route("/slack", methods=['POST'])
-def slackReq():
-	return request 
-	#req_data = request.form
-	#return req_data
+def slackReq(): 
+	req_data = request.form
+	return req_data
 
 if __name__ == "__main__":
 	# Bind to PORT if defined, otherwise default to 5000.
