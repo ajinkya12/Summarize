@@ -12,6 +12,7 @@ app = Flask(__name__)
 
 @app.route("/slack", methods=['POST'])
 def slackReq():
+	print 'REquest received !!'
 	req_data = request.form
 	channel_id = req_data.getlist('channel_id')
 	response =  slack.channels.history(channel_id)
