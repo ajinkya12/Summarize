@@ -18,8 +18,8 @@ def SlackGet():
 @app.route("/slack", methods=['POST'])
 def slackReq(): 
 	req_data = request.form
-	channel_id = req_data['channel_id']
-	response =  slack.channels.history(channel_id)
+	channel_id = req_data.getlist('channel_id')
+	response =  { 'body': 'Test Summary Application AJinkya'}#slack.channels.history(channel_id)
 	a = (response.body)
 	para = ""
 	concepts = ""
