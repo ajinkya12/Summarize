@@ -28,7 +28,7 @@ def slackReq():
 	para = para.decode("utf-8")
 	print para
 	#Use your own api key
-	payload = {'apikey': 'a429a338-07a1-4b6e-bd46-c75b1fab8c89', 'text': para}
+	payload = {'apikey': 'bsDh9pHvsileCzdTrMUPmsDI', 'text': para}
 	r = requests.get('http://api.idolondemand.com/1/api/sync/extractconcepts/v1', params=payload)
 	json_r = json.loads(r.text)
 	for i in range(len(json_r['concepts'])/2):
