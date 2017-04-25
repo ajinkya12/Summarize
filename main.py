@@ -27,6 +27,7 @@ def slackReq():
 		para += a['messages'][i]['text'] + ". "
 	para = para.decode("utf-8")
 	print para
+	return para
 	#Use your own api key
 	payload = {'apikey': 'bsDh9pHvsileCzdTrMUPmsDI', 'text': para}
 	r = requests.get('http://api.idolondemand.com/1/api/sync/extractconcepts/v1', params=payload)
