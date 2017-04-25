@@ -19,7 +19,6 @@ def SlackGet():
 def slackReq():
 	req_data = request.form
 	channel_id = req_data.getlist('channel_id')
-	return channel_id;
 	response =  slack.channels.history(channel_id)
 	a = (response.body)
 	para = ""
