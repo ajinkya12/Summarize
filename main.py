@@ -17,7 +17,7 @@ def SlackGet():
 
 @app.route("/slack", methods=['POST'])
 def slackReq():
-	return 'Post Request Here - Request ' + request 
+	return request 
 	#req_data = request.form
 	#return req_data
 
