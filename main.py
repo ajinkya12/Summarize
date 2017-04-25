@@ -19,13 +19,13 @@ def SlackGet():
 def slackReq(): 
 	req_data = request.form
 	channel_id = req_data.getlist('channel_id')
-	response =  { 'body': 'Test Summary Application AJinkya'}#slack.channels.history(channel_id)
+	response =  { body: 'Test Summary Application AJinkya'} #slack.channels.history(channel_id)
 	a = (response.body)
-	para = ""
+	para = a
 	concepts = ""
-	for i in range(len(a['messages']) - 1, -1, -1):
-		para += a['messages'][i]['text'] + ". "
-	para = para.decode("utf-8")
+	# for i in range(len(a['messages']) - 1, -1, -1):
+	# 	para += a['messages'][i]['text'] + ". "
+	# para = para.decode("utf-8")
 	print para
 	#Use your own api key
 	payload = {'apikey': 'bsDh9pHvsileCzdTrMUPmsDI', 'text': para}
