@@ -10,6 +10,11 @@ from config import *
 slack = Slacker(keys["slack"])
 app = Flask(__name__)
 
+@app.route("/slackGet", methods=['POST'])
+def SlackGet():
+	a =  "Get REquest"
+	return a
+
 @app.route("/slack", methods=['POST'])
 def slackReq():
 	print 'REquest received !!'
