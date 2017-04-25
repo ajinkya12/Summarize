@@ -10,16 +10,16 @@ from config import *
 slack = Slacker(keys["slack"])
 app = Flask(__name__)
 
-@app.route("/slackGet", methods=['POST'])
+@app.route("/slackGet", methods=['GET'])
 def SlackGet():
 	a =  "Get REquest"
 	return a
 
 @app.route("/slack", methods=['POST'])
 def slackReq():
-	print 'REquest received !!'
 	req_data = request.form
 	channel_id = req_data.getlist('channel_id')
+	return channel_id;
 	response =  slack.channels.history(channel_id)
 	a = (response.body)
 	para = ""
@@ -29,7 +29,7 @@ def slackReq():
 	para = para.decode("utf-8")
 	print para
 	#Use your own api key
-	payload = {'apikey': 'a429a338-07a1-4b6e-bd46-c75b1fab8c89', 'text': para}
+	payload = {'apikey': 'bsDh9pHvsileCzdTrMUPmsDI', 'text': para}
 	r = requests.get('http://api.idolondemand.com/1/api/sync/extractconcepts/v1', params=payload)
 	json_r = json.loads(r.text)
 	for i in range(len(json_r['concepts'])/2):
