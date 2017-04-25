@@ -18,36 +18,7 @@ def SlackGet():
 @app.route("/slack", methods=['POST'])
 def slackReq():
 	req_data = request.form
-	channel_id = req_data.getlist('channel_id')
-	response =  slack.channels.history(channel_id)
-	a = (response.body)
-	para = ""
-	concepts = ""
-	for i in range(len(a['messages']) - 1, -1, -1):
-		para += a['messages'][i]['text'] + ". "
-	para = para.decode("utf-8")
-	print para
-	return para
-	#Use your own api key
-	payload = {'apikey': 'bsDh9pHvsileCzdTrMUPmsDI', 'text': para}
-	r = requests.get('http://api.idolondemand.com/1/api/sync/extractconcepts/v1', params=payload)
-	json_r = json.loads(r.text)
-	for i in range(len(json_r['concepts'])/2):
-		temp = json_r['concepts'][i]['concept']
-		if (len(temp) >= 4) and (" " in temp) and (temp != "joined the channel"):
-			concepts += temp + ", "
-
-	summary_token = textrank(para)
-	summary = ""
-	for i in summary_token:
-		if "has joined the channel" not in i:
-			summary += i + " "
-
-	res = "*Chat Summary:* \n " + summary + "\n \n" + "*Topics Discussed:*  \n" + concepts
-
-	print res
-	return str(res)
-
+	return req_data
 
 if __name__ == "__main__":
 	# Bind to PORT if defined, otherwise default to 5000.
