@@ -1,0 +1,372 @@
+{
+"Title": "access to carrier docs with ability to view passwords",
+"Author": {
+"Id": "e_20243",
+"Name": "Dmitriy Lavrichev",
+"Type": "Employee",
+"SourceId": "20243",
+"WindowsUsername": "dlavrichev",
+"Email": "dmitriy.lavrichev@factset.com"
+},
+"Id": 23093051,
+"Guid": "00000000-0000-0000-0000-000000000000",
+"Archived": true,
+"Content": "<p>I require access to carrier docs with ability to view passwords.</p>\n<p>&nbsp;</p>\n<p>cc <span><span></span><span><span data-ismailin=\"false\" class=\"nameSuggestion is-core_hover\" style=\"color:#00008b;-moz-user-select:none;font-weight:bold;\" data-employee-id=\"2835\" data-cardtype=\"employee\">@DavidShinnick</span></span><span>&nbsp;</span></span></p>",
+"Products": [
+{
+"Id": "12286",
+"Name": "WAN Client Status 2 (WCS2)",
+"Categories": [
+{
+"Id": 5939
+}
+]
+}
+],
+"Entity": {},
+"Severity": "Low",
+"Difficulty": "Not applicable",
+"Type": "Incident",
+"Assignees": [],
+"PrimaryAssignee": null,
+"AdditionalCc": [],
+"Priority": "None",
+"ClientDisclosed": false,
+"CreatedDate": "2016-04-13T19:29:20.107",
+"UpdateDate": "2016-04-13T19:29:20.107",
+"LastUpdated": "2016-08-31T06:50:54.77",
+"UpdateBy": {},
+"Status": "Resolved",
+"Private": false,
+"Comments": [
+{
+"Author": {
+"Id": "e_1246",
+"Name": "Melisa Bedell",
+"Type": "Employee",
+"SourceId": "1246",
+"WindowsUsername": "mbedell",
+"Email": "mbedell@factset.com"
+},
+"Id": 23093141,
+"ParentKey": 23093051,
+"Content": "<p>Access granted for <span><span></span><span><span data-ismailin=\"false\" class=\"nameSuggestion is-core_hover\" style=\"color:#00008b;-moz-user-select:none;font-weight:bold;\" data-employee-id=\"20243\" data-cardtype=\"employee\">@DmitriyLavrichev</span></span><span>&nbsp;for view carrier passwords.&nbsp;</span></span></p>",
+"CreatedDate": "2016-04-13T19:32:28.817",
+"UpdateDate": "2016-04-13T19:32:28.817",
+"LastUpdated": "2016-04-13T19:32:28.817",
+"UpdateBy": {
+"Id": "e_1246",
+"Name": "Melisa Bedell",
+"Type": "Employee",
+"SourceId": "1246",
+"WindowsUsername": "mbedell",
+"Email": "mbedell@factset.com"
+}
+},
+{
+"Author": {
+"Id": "e_1246",
+"Name": "Melisa Bedell",
+"Type": "Employee",
+"SourceId": "1246",
+"WindowsUsername": "mbedell",
+"Email": "mbedell@factset.com"
+},
+"Id": 23094620,
+"ParentKey": 23093051,
+"Content": "<p>Hi <span><span></span><span><span data-ismailin=\"false\" class=\"nameSuggestion is-core_hover\" style=\"color:#00008b;-moz-user-select:none;font-weight:bold;\" data-employee-id=\"11581\" data-cardtype=\"employee\">@RaghupathiManda</span></span><span>&nbsp;and <span><span></span><span><span data-ismailin=\"false\" class=\"nameSuggestion is-core_hover\" style=\"color:#00008b;-moz-user-select:none;font-weight:bold;\" data-employee-id=\"16825\" data-cardtype=\"employee\">@AjinkyaNilkanthDhumale</span></span><span>&nbsp;- I gave Dmitriy access to view passwords, but he is unable to view carrier pages in WANSite. &nbsp;We tried CNTL + F5 but no luck. &nbsp;He can view passwords in Monster. &nbsp;</span></span></span></span></p>\n<p><span><span><span><span><br></span></span></span></span></p>\n<p><span><span><span><span>Is there a different Role Provider link to allow access for WANSite passwords? &nbsp;&nbsp;</span></span></span></span></p>\n<p><span><span><br></span></span></p>\n<p><span style=\"color:#000000;\">This is the error he&rsquo;s getting.&nbsp;</span></p>\n<p><span style=\"color:#1f497d;\">&nbsp;</span></p>\n<p><a href=\"http://is.factset.com/rpd/API/File/23094434/23094434.png?file\" target=\"_blank\"><img src=\"http://is.factset.com/rpd/API/File/23094434\"></a></p>\n<p>&nbsp;</p>",
+"CreatedDate": "2016-04-13T20:48:29.797",
+"UpdateDate": "2016-04-13T20:48:29.797",
+"LastUpdated": "2016-04-13T20:48:29.797",
+"UpdateBy": {
+"Id": "e_1246",
+"Name": "Melisa Bedell",
+"Type": "Employee",
+"SourceId": "1246",
+"WindowsUsername": "mbedell",
+"Email": "mbedell@factset.com"
+}
+},
+{
+"Author": {
+"Id": "e_11581",
+"Name": "Raghupathi Manda",
+"Type": "Employee",
+"SourceId": "11581",
+"WindowsUsername": "ramanda",
+"Email": "ramanda@factset.com"
+},
+"Id": 23099007,
+"ParentKey": 23093051,
+"Content": "<p>Hi <span><span></span><span><span data-ismailin=\"false\" class=\"nameSuggestion is-core_hover\" style=\"color:#00008b;-moz-user-select:none;font-weight:bold;\" data-employee-id=\"1246\" data-cardtype=\"employee\">@MelisaBedell</span></span><span>&nbsp;,</span></span></p>\n<p><span><span>&nbsp; &nbsp; What ever you did was correct. But he don't have permission to new wansite, that's why he is not able to open the carrier page, so you need to add him to \"WCSNEWDOCS\" roleprovider aswell to get read access to new wansite.</span></span></p>\n<p><span><span><br></span></span></p>\n<p><span><span>Note: changed made to Role Provider takes ~30 min to take effect.</span></span></p>\n<p><span><span><br></span></span></p>\n<p><span><span>Please let me know if you need any other info.</span></span></p>\n<p><span><span><br></span></span></p>\n<p><span><span>Thanks,</span></span></p>\n<p><span><span>Raghupathi.</span></span></p>",
+"CreatedDate": "2016-04-14T03:11:42.927",
+"UpdateDate": "2016-04-14T03:11:42.927",
+"LastUpdated": "2016-04-14T03:11:42.927",
+"UpdateBy": {
+"Id": "e_11581",
+"Name": "Raghupathi Manda",
+"Type": "Employee",
+"SourceId": "11581",
+"WindowsUsername": "ramanda",
+"Email": "ramanda@factset.com"
+}
+},
+{
+"Author": {
+"Id": "e_11581",
+"Name": "Raghupathi Manda",
+"Type": "Employee",
+"SourceId": "11581",
+"WindowsUsername": "ramanda",
+"Email": "ramanda@factset.com"
+},
+"Id": 23099055,
+"ParentKey": 23093051,
+"Content": "<p>Hi <span><span></span><span><span data-ismailin=\"false\" class=\"nameSuggestion is-core_hover\" style=\"color:#00008b;-moz-user-select:none;font-weight:bold;\" data-employee-id=\"2982\" data-cardtype=\"employee\">@TonyLupis</span></span><span>&nbsp;, <span><span></span><span><span data-ismailin=\"false\" class=\"nameSuggestion is-core_hover\" style=\"color:#00008b;-moz-user-select:none;font-weight:bold;\" data-employee-id=\"1246\" data-cardtype=\"employee\">@MelisaBedell</span></span><span>&nbsp;,</span></span></span></span></p>\n<p><span><span><span><span>&nbsp; &nbsp; We removed API restriction of allowing only people have new wansite acees to get carrier details. Do you think we also allow people don't have new wansite access to view carrier page aswell? If that is that case anyone can access the carrier page, But people who have edit access can edit the carrier and people with password access can view passwords. Please share your views.</span></span></span></span></p>\n<p><span><span><span><span><br></span></span></span></span></p>\n<p><span><span><span><span>THanks,</span></span></span></span></p>\n<p><span><span><span><span>Raghupathi.</span></span></span></span></p>",
+"CreatedDate": "2016-04-14T03:17:34.32",
+"UpdateDate": "2016-04-14T03:17:34.32",
+"LastUpdated": "2016-04-14T03:17:34.32",
+"UpdateBy": {
+"Id": "e_11581",
+"Name": "Raghupathi Manda",
+"Type": "Employee",
+"SourceId": "11581",
+"WindowsUsername": "ramanda",
+"Email": "ramanda@factset.com"
+}
+},
+{
+"Author": {
+"Id": "e_11581",
+"Name": "Raghupathi Manda",
+"Type": "Employee",
+"SourceId": "11581",
+"WindowsUsername": "ramanda",
+"Email": "ramanda@factset.com"
+},
+"Id": 24281939,
+"ParentKey": 23093051,
+"Content": "<p>We had conversation with Tony and melisa in last week meeting, We are going to remove the front end check aswell as this makes things consistent.&nbsp;</p>",
+"CreatedDate": "2016-06-15T09:04:22.063",
+"UpdateDate": "2016-06-15T09:04:22.063",
+"LastUpdated": "2016-06-15T09:04:22.063",
+"UpdateBy": {
+"Id": "e_11581",
+"Name": "Raghupathi Manda",
+"Type": "Employee",
+"SourceId": "11581",
+"WindowsUsername": "ramanda",
+"Email": "ramanda@factset.com"
+}
+},
+{
+"Author": {
+"Id": "s_640",
+"Name": "svc-isbuild",
+"Type": "ServiceAccount",
+"SourceId": "640",
+"WindowsUsername": "svc-isbuild",
+"Email": ""
+},
+"Id": 24363167,
+"ParentKey": 23093051,
+"Content": "<br>\t\t\t<br><span class=\"is-core_hover HoverInvokeElement\" style=\"display:inline-block;\" data-employee-id=\"adhumale\" data-cardtype=\"employee\">@Ajinkya Nilkanth Dhumale</span> has submitted <a href=\"http://istfs:8080/tfs/IS/_versionControl/changesets#cs=64010\" target=\"_blank\">TFS change: 64010</a>, which references this RPD<br><br>\r\n<pre style=\"white-space:normal;overflow:auto;font-family:'Courier';\"><strong>Description:</strong> chore(carrierdocs): removed front end check to view passwords<br>RPD:23093051</pre>\r\n\r\n\t\t",
+"CreatedDate": "2016-06-20T12:03:24.663",
+"UpdateDate": "2016-06-20T12:03:24.663",
+"LastUpdated": "2016-06-20T12:03:24.663",
+"UpdateBy": {
+"Id": "s_640",
+"Name": "svc-isbuild",
+"Type": "ServiceAccount",
+"SourceId": "640",
+"WindowsUsername": "svc-isbuild",
+"Email": ""
+}
+},
+{
+"Author": {
+"Id": "e_13532",
+"Name": "Sravan Kumar Rachooris",
+"Type": "Employee",
+"SourceId": "13532",
+"WindowsUsername": "srachooris",
+"Email": "srachooris@factset.com"
+},
+"Id": 25277799,
+"ParentKey": 23093051,
+"Content": "<p>Hi,</p>\n<p>&nbsp;</p>\n<p>Verified this in QA.</p>\n<p>&nbsp;</p>\n<p>Able to view the Password when we are added to the \"VIEWCARRIERPASSWORD\" group.</p>\n<p>&nbsp;</p>\n<table class=\"tinymce-section\" data-section-id=\"1\">\n<thead class=\"tinymce-section-collapsed\">\n<tr>\n<td>When added to the group</td>\n</tr>\n</thead>\n<tbody class=\"tinymce-section-collapsed\">\n<tr>\n<td>\n<p>&nbsp;</p>\n<p><img class=\"attached-image\" style=\"cursor:pointer;\" src=\"http://is.factset.com/rpd/API/File/25277715\"></p>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>\n<table class=\"tinymce-section\" data-section-id=\"2\">\n<thead class=\"tinymce-section-collapsed\">\n<tr style=\"height:13px;\">\n<td style=\"height:13px;\">When not in the group</td>\n</tr>\n</thead>\n<tbody class=\"tinymce-section-collapsed\">\n<tr style=\"height:13px;\">\n<td style=\"height:13px;\">\n<p>&nbsp;</p>\n<p><img class=\"attached-image\" style=\"cursor:pointer;\" src=\"http://is.factset.com/rpd/API/File/25277747\"></p>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>\n<p>Hence, setting the status to Testing Complete.</p>\n<p>&nbsp;</p>\n<p>Thanks,</p>\n<p>Sravan</p>",
+"CreatedDate": "2016-08-05T09:26:46.303",
+"UpdateDate": "2016-08-05T09:26:46.303",
+"LastUpdated": "2016-08-05T09:26:46.303",
+"UpdateBy": {
+"Id": "e_13532",
+"Name": "Sravan Kumar Rachooris",
+"Type": "Employee",
+"SourceId": "13532",
+"WindowsUsername": "srachooris",
+"Email": "srachooris@factset.com"
+}
+},
+{
+"Author": {
+"Id": "e_11581",
+"Name": "Raghupathi Manda",
+"Type": "Employee",
+"SourceId": "11581",
+"WindowsUsername": "ramanda",
+"Email": "ramanda@factset.com"
+},
+"Id": 25800151,
+"ParentKey": 23093051,
+"Content": "<p style=\"margin:0px;padding:0px;color:#000000;font-family:Calibri, Helvetica, sans-serif;font-size:12.8px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:normal;letter-spacing:normal;line-height:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;background-color:#ffffff;\">Changes were released to production.</p><p style=\"margin:0px;padding:0px;color:#000000;font-family:Calibri, Helvetica, sans-serif;font-size:12.8px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:normal;letter-spacing:normal;line-height:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;background-color:#ffffff;\">&nbsp;</p><p style=\"margin:0px;padding:0px;color:#000000;font-family:Calibri, Helvetica, sans-serif;font-size:12.8px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:normal;letter-spacing:normal;line-height:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;background-color:#ffffff;\">-Resolving.</p><p style=\"margin:0px;padding:0px;color:#000000;font-family:Calibri, Helvetica, sans-serif;font-size:12.8px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:normal;letter-spacing:normal;line-height:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;background-color:#ffffff;\">&nbsp;</p><p style=\"margin:0px;padding:0px;color:#000000;font-family:Calibri, Helvetica, sans-serif;font-size:12.8px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:normal;letter-spacing:normal;line-height:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;background-color:#ffffff;\">Thanks,</p><p style=\"margin:0px;padding:0px;color:#000000;font-family:Calibri, Helvetica, sans-serif;font-size:12.8px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:normal;letter-spacing:normal;line-height:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;background-color:#ffffff;\">Raghupathi.</p>",
+"CreatedDate": "2016-08-31T06:50:54.77",
+"UpdateDate": "2016-08-31T06:50:54.77",
+"LastUpdated": "2016-08-31T06:50:54.77",
+"UpdateBy": {
+"Id": "e_11581",
+"Name": "Raghupathi Manda",
+"Type": "Employee",
+"SourceId": "11581",
+"WindowsUsername": "ramanda",
+"Email": "ramanda@factset.com"
+},
+"IsResolutionComment": true
+}
+],
+"Resolution": {
+"Code": 20,
+"Description": "Implemented Enhancement"
+},
+"LinkedRPDs": [
+{
+"MessageKey": 23724011,
+"ParentKey": 0,
+"HasChildren": true,
+"Private": false,
+"Title": "WCS Build 2016.4",
+"Type": 4,
+"Resolved": true
+},
+{
+"MessageKey": 12121996,
+"ParentKey": 23724011,
+"HasChildren": false,
+"Private": false,
+"Title": "Migration of WCS schema into the IS development environment",
+"Type": 2,
+"Resolved": true
+},
+{
+"MessageKey": 21435608,
+"ParentKey": 23724011,
+"HasChildren": false,
+"Private": false,
+"Title": "Slowness in Billing Section - Edit, Save, Comments",
+"Type": 4,
+"Resolved": true
+},
+{
+"MessageKey": 22235993,
+"ParentKey": 23724011,
+"HasChildren": false,
+"Private": false,
+"Title": "Add vendor docs in circuits of carrier page",
+"Type": 2,
+"Resolved": true
+},
+{
+"MessageKey": 22829257,
+"ParentKey": 23724011,
+"HasChildren": false,
+"Private": false,
+"Title": "Links are not updating for some listbuilder views",
+"Type": 1,
+"Resolved": true
+},
+{
+"MessageKey": 23093051,
+"ParentKey": 23724011,
+"HasChildren": false,
+"Private": false,
+"Title": "access to carrier docs with ability to view passwords",
+"Type": 4,
+"Resolved": true
+},
+{
+"MessageKey": 24171802,
+"ParentKey": 23724011,
+"HasChildren": false,
+"Private": false,
+"Title": "Upgrade angular to V1.5.7",
+"Type": 2,
+"Resolved": true
+},
+{
+"MessageKey": 24194470,
+"ParentKey": 23724011,
+"HasChildren": false,
+"Private": false,
+"Title": "Links in the comments pointing to old site",
+"Type": 1,
+"Resolved": true
+},
+{
+"MessageKey": 24295005,
+"ParentKey": 23724011,
+"HasChildren": false,
+"Private": false,
+"Title": "Crashing when using Advanced search",
+"Type": 1,
+"Resolved": true
+},
+{
+"MessageKey": 24646720,
+"ParentKey": 23724011,
+"HasChildren": false,
+"Private": false,
+"Title": "postpone the validations",
+"Type": 2,
+"Resolved": true
+},
+{
+"MessageKey": 24906431,
+"ParentKey": 23724011,
+"HasChildren": true,
+"Private": false,
+"Title": "Use same push client code in both IE and Chrome",
+"Type": 2,
+"Resolved": true
+},
+{
+"MessageKey": 25134194,
+"ParentKey": 23724011,
+"HasChildren": true,
+"Private": false,
+"Title": "Slowness in loading the account Numbers and Tabs issue in billing section",
+"Type": 1,
+"Resolved": true
+},
+{
+"MessageKey": 25194073,
+"ParentKey": 23724011,
+"HasChildren": false,
+"Private": false,
+"Title": "Give permission to general public",
+"Type": 4,
+"Resolved": true
+},
+{
+"MessageKey": 25203261,
+"ParentKey": 23724011,
+"HasChildren": false,
+"Private": false,
+"Title": "Refactor to not use window.setInterval",
+"Type": 1,
+"Resolved": true
+}
+],
+"ResolvedDate": "2016-08-31T06:50:54",
+"AtlasRelease": null,
+"OnlineRelease": null,
+"AutoResolveInfo": null
+}

@@ -14,12 +14,18 @@ app = Flask(__name__)
 def SlackGet():
 	a =  "Get REquest"
 	return a
-
+@app.route("/rpdsummary", methods=['POST'])
+def rpdReq():
+	req_data = request.form
+	with open('rpd.json') as json_data:
+		response = json_load(json_data)
+	
+	
 @app.route("/slack", methods=['POST'])
 def slackReq(): 
 	req_data = request.form
 	channel_id = req_data.getlist('channel_id')
-	response =  'Test Summary Application AJinkya' #slack.channels.history(channel_id)
+	response =  'Test Summary Application Ajinkya' #slack.channels.history(channel_id)
 	a = (response)
 	para = a
 	concepts = ""
@@ -27,9 +33,9 @@ def slackReq():
 	# 	para += a['messages'][i]['text'] + ". "
 	# para = para.decode("utf-8")
 	print para
-	#Use your own api key
-	payload = {'apikey': 'bsDh9pHvsileCzdTrMUPmsDI', 'text': para}
-	r = requests.get('http://api.idolondemand.com/1/api/sync/extractconcepts/v1', params=payload)
+	#Use your own api key -- API KEY created on HavenOnDemand.com
+	payload = {'apikey': '339e1f9e-a85f-4216-869e-707a33f7cfd0', 'text': para}
+	r = requests.get('http://api.havenondemand.com/1/api/sync/extractconcepts/v1', params=payload)
 	json_r = json.loads(r.text)
 	for i in range(len(json_r['concepts'])/2):
 		temp = json_r['concepts'][i]['concept']
